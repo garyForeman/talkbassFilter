@@ -3,7 +3,7 @@ var floatRegex = /\d+,?\d*(\.\d*)?/;
 var getInput = function(promptString){
     //Prompts user to enter a price than can be converted to a float. Returns
     //the value of the input converted to a float. Handles incorrect input
-    // by asking the user for a new entry.
+    //by asking the user for a new entry.
     var acceptableInput =  false;
     while(!acceptableInput){
 	var priceString = prompt(promptString).match(floatRegex)[0]
@@ -17,6 +17,19 @@ var getInput = function(promptString){
 	};
     };
     return priceVar;
+};
+
+var getPrices = true;
+
+while(getPrices){
+    priceLow = getInput("Enter the lowest price you wish to see.");
+    priceHigh = getInput("Enter the highest price you wish to see.");
+    if(priceLow > priceHigh){
+	alert("Your low price was greater than your high price!");
+    }
+    else{
+	getPrices = false;
+    };
 };
 
 var filterType = function(){
@@ -47,20 +60,15 @@ var filterType = function(){
     return hardFilter;
 };
 
-var getPrices = true;
-
-while(getPrices){
-    priceLow = getInput("Enter the lowest price you wish to see.");
-    priceHigh = getInput("Enter the highest price you wish to see.");
-    if(priceLow > priceHigh){
-	alert("Your low price was greater than your high price!");
-    }
-    else{
-	getPrices = false;
-    };
-};
-
 var hardFilter = filterType();
+
+if(hardFilter){
+    $('li:not(:has(.pairsInline))').remove();
+    $('.pairsInline:not(:has(span))').parents('li').remove();
+    $('li[class*=prefix4]').remove();
+    $('li[class*=prefix6]').remove();
+    $('li[class*=prefix7]').remove();
+}
 
 //class pairsInline indicates the line under the thread titles that
 //contain the Price and Location information. The price itself is located in
@@ -76,5 +84,8 @@ for(var i = 0; i < prices.length; i++){
 	    //any other purpose
 	    $(prices[i]).parents('li').remove();
 	};
+    }
+    else if(hardFilter){
+	$(prices[i]).parents('li').remove();
     };
 };
