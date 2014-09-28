@@ -5,10 +5,11 @@ Author: Gary Foreman
 email: gforema2@illinois.edu  
 [talkbass classifieds](http://www.talkbass.com/categories/classifieds-bg.252/) 
 
-For now, run the price filter using the Firefox Web Developer console. First, 
-select the talkbass classifieds forum you wish to browse. Then, go to 
-Tools -> Web Developer -> Web Console. Copy and paste the contents of 
-`filter.js` at the command line. Greasemonkey implementation coming soon.
+Run using the
+[Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)
+add-on for the Mozilla Firefox web browser. After you have installed the
+add-on, click on the monkey icon that should appear in your Firefox toolbar.
+ 
 
 SOFT filter
 -----------
