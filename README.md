@@ -3,19 +3,19 @@ talkbassFilter
 
 Author: Gary Foreman  
 email: gforema2@illinois.edu  
-[talkbass classifieds](http://www.talkbass.com/categories/classifieds-bg.252/)
-[release thread](http://www.talkbass.com/threads/tb-classifieds-price-filter.1109279/) 
+[talkbass classifieds](http://www.talkbass.com/categories/classifieds-bg.252/)  
+[release thread](http://www.talkbass.com/threads/tb-classifieds-price-filter.1109279/)  
+[video demo](https://www.youtube.com/watch?v=pyZE_YJ5kZg&index=1&list=UUM6F76aBajCks2diljMPg0Q)  
+[installation instructions](https://www.youtube.com/watch?v=F1H7b7gkSe0&list=UUM6F76aBajCks2diljMPg0Q&index=2)
 
 This filter can be applied to all pages of the TalkBass classifieds forum.
 Its purpose is to filter threads based on price range.
-[Find the video demo here](https://www.youtube.com/watch?v=pyZE_YJ5kZg&index=1&list=UUM6F76aBajCks2diljMPg0Q).
 To run the filter, you'll need an add-on for your web browser that can run
 user scripts. 
 [Here are some suggestions](https://greasyfork.org/help/installing-user-scripts)
 . Personally, I use Greasemonkey for the Mozilla Firefox web browser. For easy 
 installation, download from
 [Greasy Fork](https://greasyfork.org/scripts/5340-talkbass-price-filter).
-[Find full installation instructions here](https://www.youtube.com/watch?v=F1H7b7gkSe0&list=UUM6F76aBajCks2diljMPg0Q&index=2).
 **This script uses cookies. For full functionality, make sure you have enabled 
 the use of cookies in your browser.** Cookies are used so that the price range 
 values specified by the user can be saved as he or she navigates through pages 
